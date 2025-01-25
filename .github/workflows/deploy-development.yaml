@@ -28,8 +28,7 @@ jobs:
       id-token: write
     needs: dev-build-job
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages  # Ensure this matches the environment in your repository
+
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
