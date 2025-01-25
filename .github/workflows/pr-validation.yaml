@@ -19,4 +19,4 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Build using Parcel 
-        run: npx parcel build "./src/index.html" --dist-dir 
+        run: npx parcel build "./src/index.html" --dist-dir "./dev" --public-url "./"
