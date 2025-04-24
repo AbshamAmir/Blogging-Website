@@ -13,8 +13,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Build with Parcel
-        run: npx parcel build "./src/index.html" --dist-dir "./dev" --public-url "./"
+      -  name: Build using Parcel
+         run: npx parcel build "./src/index.html" --dist-dir 
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
